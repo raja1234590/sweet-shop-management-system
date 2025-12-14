@@ -1,0 +1,154 @@
+
+.page-container {
+  min-height: 100vh;
+  padding: 30px;
+  padding-top: 500px;
+  background: #f4f6fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page-header h2 {
+  color: #333;
+}
+
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-danger {
+  background: #e53e3e;
+  color: white;
+}
+
+.btn-secondary {
+  background: #38a169;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.sweets-grid {
+  display: grid;
+  
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .sweets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .sweets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 901px) {
+  .sweets-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.sweets-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+
+.sweets-horizontal > * {
+  min-width: 260px;
+  max-width: 260px;
+  flex-shrink: 0;
+}
+
+
+.sweets-horizontal::-webkit-scrollbar {
+  height: 8px;
+}
+.sweet-card {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+
+.sweets-horizontal::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+.sweets-horizontal::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+
+.admin-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admin-form h3 {
+  margin-bottom: 15px;
+}
+
+.admin-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.admin-sweet {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admin-sweet span {
+  font-weight: 600;
+  color: #333;
+  flex: 1;             
+  white-space: nowrap; 
+}
+
+.admin-actions button {
+  margin-left: 8px;
+}

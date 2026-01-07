@@ -142,9 +142,4 @@ Database indexing for frequently accessed fields
 
 Easy migration to Next.js or TailwindCSS if required
 
-Repository Structure
-/
-├── frontend/   # React + Vite frontend
-├── backend/    # Node.js + Express backend
-├── .gitignore
-└── README.md
+
